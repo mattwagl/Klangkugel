@@ -1,0 +1,19 @@
+{
+  "name": "Klangkugel",
+  "description": "Want to get things done? Start Klangkugel, enjoy the sounds, escape from the rest of the world and get in a positive mood.",
+  "version": "0.0.0.1",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "app": {
+    "urls": [
+      "http://klangkugel.gedankentank.org/"
+    ],
+    "launch": {
+      "web_url": "http://klangkugel.gedankentank.org/",
+      "container": "panel",
+      "width": 470,
+      "height": 670
+    }
+  }
+}

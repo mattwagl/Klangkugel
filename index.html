@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<meta charset="utf-8">
+	
+	<title> Klangkugel </title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/behaviour.js"></script>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" type="image/png">
+		
+	<link href='http://fonts.googleapis.com/css?family=Bangers&v1' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body id="app" class="stopped">
+
+	<div id="wrapper">
+		<h1 class="tksnicker">Klangkugel</h1>
+		<div id="avatar"></div>
+
+		<div id="stand">
+			
+			<div id="controls">
+				<select id="sound-theme-switcher" class="tksnicker">
+					<option value="0">Birds</option>
+					<option value="1">Waves</option>
+				</select>
+				<div id="start-stop" class="button tksnicker">Start</div>
+			</div>
+
+		</div>
+		
+		<div id="kugel">
+		</div>
+
+	</div>
+	
+	<audio id="sound1" src="media/sounds/birds.mp3" loop="loop" autobuffer="autobuffer"></audio>
+    <audio id="sound2" src="media/sounds/waves.mp3" loop="loop" autobuffer="autobuffer"></audio>
+    
+    <div class="note"></div>
+    
+    <footer>A simple HTML5 audio experiment by <a href="http://www.gedankentank.com">gedankentank.com</a> | Avatar made by <a href="http://www.productivedreams.com/free-psd-avatar-icon-set/">productivedreams.com</a> | Sounds are licensed under <a href="http://creativecommons.org/licenses/sampling+/1.0/">CC</a> by <a href="http://www.freesound.org/samplesViewSingle.php?id=18765">reinsamba</a> and <a href="http://www.freesound.org/samplesViewSingle.php?id=48412">Luftrum</a></footer>
+</body>
+</html>

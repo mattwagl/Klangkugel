@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+ 
+ 
+body {
+	background-color: #FFF7E3;
+}
+
+body.stopped {
+
+}
+
+.button:active {
+
+}
+
+#wrapper {
+	margin: 100px auto;
+	width: 300px;
+	text-align: center;
+	position: relative;
+}
+
+h1 {
+	padding-top: 85px;
+	font-weight: normal;
+	text-shadow: -1px -2px 1px #fff;
+	font-size: 2.25em;
+	font-family: 'Bangers' , arial, serif;
+}
+
+#kugel {
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 141px;
+	left: 0px;
+	background: -webkit-gradient(radial, 40% 40%, 1, 50% 50%, 300, from(#fff), to(#333));
+	-webkit-transition: all 0.4s ease-in-out;
+	border-top-left-radius: 150px;
+	border-top-right-radius: 150px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	opacity: 0.4;
+	-webkit-box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+}
+.stopped #kugel {
+	-webkit-transform: scale(1,1);
+	top:0px;
+}
+
+
+
+#stand {
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	width: 100%;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8A6C67),to(#2B1C2B));
+	width: 300px;
+	position: absolute;
+	top: 340px;
+	left: 0px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+#controls {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 8px 10px;
+	text-align: center;
+	-webkit-box-sizing:border-box;
+	position: relative;
+	font-size: 1.2em;
+   	letter-spacing: 0.125em;
+}
+#controls .button {
+	width: 3em;
+}
+
+input, textarea, select, .button {
+	border: 1px solid #555;
+	color: #000;
+	font-size: 0.8em;
+	padding: 0.5em 1em 0.5em ;
+	line-height: 1.2em;
+	-webkit-appearance: none;
+	border-radius: 0.5em 0.5em;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ABE3FF), to(#80A6D1));
+	-webkit-box-shadow: 0.2em 0.2em 0.6em rgba(0,0,0,0.5);
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-background-clip: padding-box;
+	font-family: 'Bangers' , arial, serif;
+ }
+select {
+	background-image:  url(../media/img/arrow.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ABE3FF), to(#80A6D1));
+   	background-position: 80% 50% ;
+   	background-repeat: no-repeat;
+   	padding: 0.5em 2.5em 0.5em 1em;
+   	margin-right: 1em;
+   	letter-spacing: 0.125em;
+   	outline: none;
+	font-family: 'Bangers' , arial, serif;
+	
+}
+
+#avatar {
+	width: 200px;
+	height: 128px;
+	position: absolute;
+	background: url(../media/img/avatar_happy.png) left top no-repeat;
+	top: 215px;
+	left: 47px;
+}
+
+#controls select {
+	display: none;
+}
+
+.stopped #controls select {
+	display: inline-block;
+}
+
+.stopped #avatar {
+	background: url(../media/img/avatar.png) left top no-repeat;
+}
+
+.note {
+	background: url(../media/img/note.png) left top no-repeat;
+	width: 16px;
+	height: 35px;
+	position: absolute;
+	-webkit-transition: all 0.5s ease-in;
+	opacity:0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+	font-size: 0.6em;
+	padding: 1em;
+	color: #444;
+	-webkit-box-sizing: border-box;
+	text-shadow: 1px 1px 0px rgba(255,255,255, 0.45);
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.0, rgba(0,0,0,0.15)),
+		color-stop(1.0, rgba(0,0,0,0.3))
+	);
+}
+footer a {
+	color: #333;
+}
