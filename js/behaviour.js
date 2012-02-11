@@ -18,11 +18,12 @@ $(document).ready(function() {
 	
 		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) { 
 			down = 'touchstart';
-			$(document).bind('touchmove', function(event) { event.preventDefault() });
 		}
 		
-		$startButton.bind(down, function() {
+		$startButton.bind(down, function(e) {
 			toggle();
+			e.stopPropagation();
+			e.preventDefault();
 		});
 		
 		$themeSwitcher.bind('change', function() {
@@ -61,7 +62,7 @@ $(document).ready(function() {
 		$startButton.html('Stop');
 		$body.removeClass('stopped');
 		animate = true;
-		render();
+		window.setTimeout(render, 1000);
 	}
 	
 	function stop () {
